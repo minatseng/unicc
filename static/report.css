@@ -1,0 +1,154 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 100%;
+  min-width: 1024px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+
+.report-section {
+  margin-top: 20px;
+  padding: 40px;
+  background: #f4f6f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f5ead;
+  color: white;
+  padding: 10px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.report-header img {
+  height: 100px;
+}
+
+
+.report-header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.report-header-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.classification-section {
+  grid-row: span 2;
+  display: flex;
+  border-width: 2px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.classification-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.classification-circle.low {
+  background-color: #22C55E;
+  color: white;
+}
+
+.classification-circle.medium {
+  background-color: #FBBF24;
+  color: white;
+}
+
+.classification-circle.high {
+  background-color: #EF4444;
+  color: white;
+}
+
+.report-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  border-color: #ddd;
+  border-width: 2px;
+}
+
+
+.report-item h4 {
+  font-size: 24px;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.report-item p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+button {
+  background-color: #0d559e;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 20px;
+  }
+
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-item {
+    height: auto;
+    min-height: 100px;
+  }
+
+  .classification-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .needle {
+    height: 48px;
+  }
+}

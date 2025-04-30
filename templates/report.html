@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Analysis Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/report.css">
+  <style>
+    .report-section button {
+      margin-top: 40px;
+    }
+
+    .classification-section h4 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .classification-section p {
+      font-size: 18px;
+      font-weight: normal;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="report-section" id="report-section">
+    <div class="report-header">Analysis Report
+      <img src="../static/UNICC_Logo.jpeg">
+    </div>
+    <div class="report-grid">
+      <div class="classification-section">
+        <h4>Classification</h4>
+        <p>{{ classification }}</p>
+      </div>
+      <div class="report-item">
+        <h4>Target</h4>
+        <p>{{ target }}</p>
+      </div>
+      <div class="report-item">
+        <h4>Reason</h4>
+        <p>{{ reason }}</p>
+      </div>
+      <div class="report-item">
+        <h4>Keywords</h4>
+        <p>{{ keywords }}</p>
+      </div>
+      <div class="report-item sentiment">
+        <h4>Sentiment</h4>
+        <p>{{ sentiment }}</p>
+      </div>
+    </div>
+    <button onclick="window.location.href='/'">Analyze Again</button>
+  </div>
+</body>
+
+</html>
