@@ -1,7 +1,7 @@
 let selectedAnalyzeType = null;
 let convertedAudioURL = null;
 
-// "How to use" 內容映射
+// "How to use"
 const howToUseContent = {
   Video: `
     <p>For Video Analysis:<br>
@@ -35,7 +35,7 @@ const howToUseContent = {
   `
 };
 
-// Step 1: 選擇分析類型並更新 How to use 內容
+// Step 1
 function selectAnalyzeType(type) {
   selectedAnalyzeType = type;
   document.getElementById('analyze-type-display').textContent = `Selected: ${type}`;
@@ -43,7 +43,7 @@ function selectAnalyzeType(type) {
   howToUseElement.innerHTML = howToUseContent[type] || '<p>Please select an analyze type (Video, Audio, or Text) to see the corresponding instructions.</p >';
 }
 
-// Step 2: 模擬視頻轉換為音頻
+// Step 2
 function convertVideoToAudio() {
   const videoInput = document.getElementById('videoInput');
   const videoStatus = document.getElementById('video-status');
@@ -63,14 +63,14 @@ function convertVideoToAudio() {
     audioPlayer.src = convertedAudioURL;
     videoStatus.textContent = `Conversion complete! File: ${file.name}`;
 
-    // 添加下载链接逻辑
+  
     downloadLink.href = convertedAudioURL;
     downloadLink.download = "converted.wav";
     downloadLink.style.display = 'inline-block';
   }, 1000);
 }
 
-// Step 3: 模擬音頻格式標準化
+// Step 3
 function standardizeAudioFormat() {
   const audioInput = document.getElementById('audioInput');
   const audioStatus = document.getElementById('audio-status');
