@@ -89,7 +89,7 @@ function standardizeAudioFormat() {
     const standardizedAudioURL = URL.createObjectURL(file);
     audioPlayer.src = standardizedAudioURL;
     audioStatus.textContent = `Standardization complete! File: ${file.name}`;
-    downloadLink.href = convertedAudioURL;
+    downloadLink.href = standardizedAudioURL;
     downloadLink.download = "converted.wav";
     downloadLink.style.display = 'inline-block';
   }, 1000);
