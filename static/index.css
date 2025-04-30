@@ -4,7 +4,6 @@ body {
   padding: 0 20px;
   max-width: 100%;
   min-width: 1024px;
-  /* 最小宽度，避免压缩布局 */
   background-color: #0d559e;
   color: #333333;
 }
@@ -13,7 +12,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  /* 中间内容白底 */
   padding: 40px 20px;
   box-sizing: border-box;
 }
@@ -36,17 +34,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 55px;
-  /* ⬆️ 加大字体 */
   margin: 0;
   color: #2c3e50;
   white-space: nowrap;
-  /* ✅ 保持一行不换行 */
   overflow: hidden;
-  /* ✅ 如果超出则截断 */
   text-overflow: ellipsis;
-  /* ✅ 超出内容显示省略号 */
   max-width: 80%;
-  /* ✅ 限制最大宽度 */
 }
 
 
