@@ -10,7 +10,7 @@ const howToUseContent = {
     <p>2. <strong>Step 2: Preview and Download Audio</strong><br>
     After conversion, preview the audio in the "Audio Preview" section and download the generated .wav file.</p >
     <p>3. <strong>Transcribe Audio</strong><br>
-    Open the <a href=" " target="_blank">Whisper Web Tool</a >, select a model (Recommended: Base), and wait for the model to fully load. Drag the downloaded .wav file into the Whisper site to transcribe it, selecting the language corresponding to your content.</p >
+    Open the <a href="https://whisper.ggerganov.com/" target="_blank">Whisper Web Tool</a >, select a model (Recommended: Base), and wait for the model to fully load. Drag the downloaded .wav file into the Whisper site to transcribe it, selecting the language corresponding to your content.</p >
     <p>4. <strong>Step 3: Perform Text Analysis</strong><br>
     Copy the transcription result from the Whisper site, paste it into the "Enter content..." field in the "Text" section, select the language, and click "Analyze" to view the analysis report.</p >
     <p>✅ <strong>Note:</strong> No installation or login is required. All operations run locally in your browser.</p >
